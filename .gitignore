@@ -2,7 +2,7 @@ transfer.js
 
 transfer_data.js
 
-data_folder/
+# data_folder/
 
 db/schema.sql
 
