@@ -1,6 +1,10 @@
 const authService = require("../services/auth.service");
+// const loginRequired = require("../utils/loginRequired");
 
 const signUp = async (req, res) => {
+  // const { id, pw } = req;
+  // loginRequired.verifyUser();
+
   try {
     const { name, birthdate, phoneNumber, gender, address, email, password } =
       req.body;

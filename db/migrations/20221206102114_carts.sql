@@ -4,6 +4,7 @@ CREATE TABLE carts (
   userId INT NOT NULL,
   productId INT NOT NULL,
   quantity INT NOT NULL,
+  CONSTRAINT userProductUkey UNIQUE (userId, productId),
   PRIMARY KEY(id),
   FOREIGN KEY (userId) REFERENCES users(id),
   FOREIGN KEY (productId) REFERENCES products(id)
